@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded'), () => {
             task.textContent = taskText;
 
         const deleteButton = document.createElement('li');
-        deleteButton.textContent = Remove;
-        deleteButton.className = 'remove-btn';
+        removeButton.textContent = Remove;
+        removeButtonButton.className = 'remove-btn';
 
-        deleteButton.onclick = function(){
+        removeButton.onclick = function(){
             taskList.removeChild(task);
         }
 
-        task.append(deleteButton);
-        taskList.append(task);
+        task.append(removeButton);
+        taskList.appendChild(task);
 
         taskInput.value = "";
     }
