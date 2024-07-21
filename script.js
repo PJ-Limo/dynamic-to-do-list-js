@@ -13,9 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const task = document.createElement('li');
             task.textContent = taskText;
 
-        const removeButton = document.createElement('li');
+        const removeButton = document.createElement('button');
         removeButton.textContent = Remove;
-        removeButtonButton.className = 'remove-btn';
+        removeButtonButton.classList.add = 'remove-btn';
 
         removeButton.onclick = function(){
             taskList.removeChild(task);
@@ -38,4 +38,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loadTasks()
 
-}};
+}});
